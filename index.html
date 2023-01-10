@@ -1,13 +1,22 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <title>ToF Todo</title>
+        <link rel="icon" type="image/x-icon" href="./images/tof-todo-favicon.png">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
 		<main>
-			<div class="container">
-				<h1 class="app-title">todos</h1>
+            <h1 class="app-title">Tower of Fantasy Todos</h1>
+            <h2 class="todo-header">Dailies</h2>
+			<div class="container container-daily">
+				<ul class="todo-list js-todo-list-daily"></ul>
+			</div>
+            <h2 class="todo-header">Weeklies</h2>
+			<div class="container container-weekly">
+				<ul class="todo-list js-todo-list-weekly"></ul>
 				<ul class="todo-list js-todo-list"></ul>
+                <!-- don't need these until custom todo is supported
                 <div class="empty-state">
                     <svg class="checklist-icon"><use href="#checklist-icon"></use></svg>
                     <h2 class="empty-state__title">Add your first todo</h2>
@@ -16,6 +25,7 @@
 				<form class="js-form">
 					<input autofocus type="text" aria-label="Enter a new todo item" placeholder="E.g. Build a web app" class="js-todo-input">
 				</form>
+                -->
 			</div>
 		    <script src="./main.js"></script>
 		</main>
@@ -27,4 +37,8 @@
 			</defs>
 		</svg>
 	</body>
+    <div class="footer">
+        <p class="r-align">By <b>Korone</b> (The Worlds Between)</p>
+        <p class="r-align">Discord: <b>Kuma</b>#2222</p>
+    </div>
 </html>

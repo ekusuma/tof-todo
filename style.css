@@ -15,24 +15,52 @@ body {
     line-height: 1.4;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.r-align {
+    text-align: right;
+}
+
 .container {
     width: 100%;
-    max-width: 500px;
+    max-width: 45vw;
     margin: 0 auto;
     padding-left: 10px;
     padding-right: 10px;
     color: #333;
-    height: 90vh;
+    height: 30vh;
     margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-bottom: 0vh;
     overflow-y: auto;
+}
+
+.container-weekly {
+    height: 40vh;
 }
 
 .app-title {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 80px;
+    font-size: 5vh;
     opacity: 0.5;
+}
+
+.todo-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    opacity: 0.7;
 }
 
 svg {
@@ -57,7 +85,7 @@ svg {
     flex-grow: 1;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .done span {
